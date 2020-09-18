@@ -148,7 +148,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #home {
   position: relative;
   height: 100vh;

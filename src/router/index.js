@@ -13,7 +13,7 @@ const router = new VueRouter({
         { path: '/cart', component: Cart },
         { path: '/profile', component: Profile },
         { path: '/category', component: Category },
-        { path: '/detail:id', component: Detail }
+        { path: '/detail:iid', component: Detail }
     ],
     mode: 'history'
 })
