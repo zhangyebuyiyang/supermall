@@ -79,7 +79,7 @@ export default {
     this.getHomeGoods("sell");
   },
   mounted() {
-    this.$bus.$on("imgLoad", () => {
+    this.$bus.$on("homeImgLoad", () => {
       this.debounce(this.$refs.scroll.scroll.refresh(), 500);
     });
   },
