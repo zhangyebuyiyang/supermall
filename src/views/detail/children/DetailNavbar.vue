@@ -30,6 +30,7 @@ export default {
   methods: {
     centerclick(i) {
       this.currentIndex = i;
+      this.$emit("centerClick", i);
     },
     backClick() {
       this.$router.go(-1);

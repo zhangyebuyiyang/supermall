@@ -22,9 +22,9 @@ export default {
   },
   methods: {
     imgLoad() {
-      if (this.$route.path.indexOf("/home")) {
+      if (this.$route.path.indexOf("/home") !== -1) {
         this.$bus.$emit("homeImgLoad");
-      } else if (this.$route.path.indexOf("/detail")) {
+      } else if (this.$route.path.indexOf("/detail") !== -1) {
         this.$bus.$emit("detailImgLoad");
       }
     },
@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .goods-item {
   padding-bottom: 40px;
   position: relative;

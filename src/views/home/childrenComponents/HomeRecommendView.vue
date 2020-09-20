@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home-recommend-view {
   display: flex;
   font-size: 14px;
