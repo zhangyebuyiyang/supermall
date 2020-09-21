@@ -14,16 +14,16 @@
 import NavBar from "components/common/navbar/NavBar";
 import Scroll from "components/common/scroll/Scroll";
 
-import CartListItem from "./children/CartListItem";
-import CartBottomComputed from "./children/CartBottomComputed";
+import CartBottomComputed from "./childrenComponents/CartBottomComputed";
+import CartListItem from "./childrenComponents/CartListItem";
 export default {
   name: "Cart",
   components: {
     NavBar,
     Scroll,
 
-    CartListItem,
     CartBottomComputed,
+    CartListItem,
   },
   activated() {
     this.$refs.scroll.scroll.refresh();

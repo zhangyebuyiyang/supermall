@@ -136,7 +136,6 @@ export default {
       cartInfo.desc = this.goods.desc;
       cartInfo.price = this.goods.realPrice;
       cartInfo.iid = this.iid;
-      cartInfo.decide = true;
       this.$store.commit("addCartList", cartInfo);
     },
   },

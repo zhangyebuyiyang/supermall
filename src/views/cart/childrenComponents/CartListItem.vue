@@ -1,7 +1,7 @@
 <template>
   <div class="cart-list-item">
     <div class="select">
-      <div class="select-icon" :class="{active:item.decide}" @click="selectClick"></div>
+      <div class="select-icon" :class="{active:item.checked}" @click="selectClick"></div>
     </div>
     <div class="img">
       <img :src="item.image" alt />
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     selectClick() {
-      this.$store.commit("selectClick", this.index);
+      this.item.checked = !this.item.checked;
     },
   },
 };

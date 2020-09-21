@@ -18,6 +18,7 @@ const store = new Vuex.Store({
                 oldCartObj.cunt += 1
             } else {
                 cartObj.cunt = 1
+                cartObj.checked = true;
                 state.cartList.push(cartObj)
             }
 
