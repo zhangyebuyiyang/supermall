@@ -84,7 +84,6 @@ export default {
       this.centerTopYs.push(this.$refs.params.$el.offsetTop);
       this.centerTopYs.push(this.$refs.comment.$el.offsetTop);
       this.centerTopYs.push(this.$refs.goods.$el.offsetTop);
-      console.log(this.centerTopYs);
     }, 200);
   },
   mounted() {
@@ -137,6 +136,7 @@ export default {
       cartInfo.desc = this.goods.desc;
       cartInfo.price = this.goods.realPrice;
       cartInfo.iid = this.iid;
+      cartInfo.decide = true;
       this.$store.commit("addCartList", cartInfo);
     },
   },

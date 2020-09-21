@@ -21,6 +21,9 @@ const store = new Vuex.Store({
                 state.cartList.push(cartObj)
             }
 
+        },
+        selectClick(state, index) {
+            state.carList[index].decide = !state.carList[index].decide
         }
     },
     actions: {
